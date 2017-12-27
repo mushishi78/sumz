@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    background: #ffe94a;
+}
+
+.hide {
+    display: none !important;
+}
+
+.enabled-scores .card,
+.enabled-numbers .score,
+.enabled-numbers .sign,
+.enabled-signs .score,
+.enabled-signs .number  {
+    opacity: 0.3;
+}
+
+.scores {
+    height: 15vh;
+    padding: 2vh 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.score {
+    color: #fff;
+    width: 30vw;
+    height: 11vh;
+    border-radius: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12vw;
+    box-shadow: 1px 1px 1vw 0 rgba(0, 0, 0, 0.3);
+    border: 1vw solid rgba(255, 255, 255, 0.9);
+}
+
+.score.user {
+    background: #7ad7ff;
+}
+
+.score.comp {
+    background: #ec593b;
+}
+
+.score.selected {
+    box-shadow: 1px 1px 1vw 0.5vw rgba(0, 0, 0, 0.5);
+}
+
+.hand, .number-picker, .sign-picker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 70vh;
+}
+
+.card {
+    height: 20vh;
+    width: 27vw;
+    border: 1vw solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 1vw 2vw;
+    color: #e62637;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 16vw;
+    box-shadow: 1px 1px 1vw 0 rgba(0, 0, 0, 0.3);
+}
+
+.card.number {
+    background: #ffe94a;
+}
+
+.card.sign {
+    background: #7ad7ff;
+}
+
+.card.used {
+    opacity: 0;
+}
+
+.card.selected {
+    box-shadow: 1px 1px 1vw 0.5vw rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.undo, .pass {
+    padding: 0.5vh 0;
+    font-size: 10vw;
+    border-radius: 5vh;
+    width: 40vw;
+    text-align: center;
+    border: 1vw solid rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 1px 0.5vw 0 rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.undo {
+    background: #ec593b;    
+}
+
+.pass {
+    background: #7ad7ff;
+}
+
+.end-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    font-size: 5vh;
+}
+
+.end-message {
+    color: #ec593b;
+    text-shadow: 1px 1px 2px white;
+    margin: 0 5vw;
+}
+
+.play-again {
+    padding: 0.5vh 0;
+    border-radius: 5vh;
+    margin: 0 15vw;
+    text-align: center;
+    border: 1vw solid rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 1px 0.5vw 0 rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+    background: #3bec69;
+    margin-top: 5vh;
+}

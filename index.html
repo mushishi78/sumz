@@ -1,0 +1,50 @@
+<!doctype>
+<html>
+<head>
+	<title>Sumz</title>
+	<link rel='stylesheet' href='./index.css' />
+</head>
+<body>
+	<div class='scores'>
+		<div class='score user selected' ontouchstart='onScoreClick(0)'>0</div>
+		<div class='score comp' ontouchstart='onScoreClick(1)'>0</div>
+	</div>
+	<div class='hand'>
+		<div class='card' ontouchstart='onCardClick(0)'></div>
+		<div class='card' ontouchstart='onCardClick(1)'></div>
+		<div class='card' ontouchstart='onCardClick(2)'></div>
+		<div class='card' ontouchstart='onCardClick(3)'></div>
+		<div class='card' ontouchstart='onCardClick(4)'></div>
+		<div class='card' ontouchstart='onCardClick(5)'></div>
+		<div class='card' ontouchstart='onCardClick(6)'></div>
+		<div class='card' ontouchstart='onCardClick(7)'></div>
+		<div class='card' ontouchstart='onCardClick(8)'></div>
+	</div>
+	<div class='number-picker hide'>
+		<div class='card number' ontouchstart='onNumberPick(1)'>1</div>
+		<div class='card number' ontouchstart='onNumberPick(2)'>2</div>
+		<div class='card number' ontouchstart='onNumberPick(3)'>3</div>
+		<div class='card number' ontouchstart='onNumberPick(4)'>4</div>
+		<div class='card number' ontouchstart='onNumberPick(5)'>5</div>
+		<div class='card number' ontouchstart='onNumberPick(6)'>6</div>
+		<div class='card number' ontouchstart='onNumberPick(7)'>7</div>
+		<div class='card number' ontouchstart='onNumberPick(8)'>8</div>
+		<div class='card number' ontouchstart='onNumberPick(9)'>9</div>
+	</div>
+	<div class='sign-picker hide'>
+		<div class='card sign' ontouchstart='onSignPick("plus")'>&plus;</div>
+		<div class='card sign' ontouchstart='onSignPick("minus")'>&minus;</div>
+		<div class='card sign' ontouchstart='onSignPick("times")'>&times;</div>
+		<div class='card sign' ontouchstart='onSignPick("divide")'>&divide;</div>
+	</div>
+	<div class='end-screen hide'>
+		<div class='end-message'></div>
+		<div ontouchstart='window.location.reload(false)' class='play-again'>Play again</div>
+	</div>
+	<div class='footer'>
+		<div class='undo' ontouchstart='undo()'>Undo</div>
+		<div class='pass' ontouchstart='pass()'>Pass</div>
+	</div>
+	<script src='./index.js'></script>
+</body>
+</html>
