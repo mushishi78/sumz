@@ -5,45 +5,51 @@
 	<link rel='stylesheet' href='./index.css' />
 </head>
 <body>
-	<div class='scores'>
-		<div class='score user selected' ontouchstart='onScoreClick(0)'>0</div>
-		<div class='score comp' ontouchstart='onScoreClick(1)'>0</div>
+	<div class='trail user'>
+		<div class='card number'>2</div>
+		<div class='card sign'>&plus;</div>
+		<div class='card number'>7</div>
+		<div class='select selected'>*</div>
 	</div>
-	<div class='hand'>
-		<div class='card' ontouchstart='onCardClick(0)'></div>
-		<div class='card' ontouchstart='onCardClick(1)'></div>
-		<div class='card' ontouchstart='onCardClick(2)'></div>
-		<div class='card' ontouchstart='onCardClick(3)'></div>
-		<div class='card' ontouchstart='onCardClick(4)'></div>
-		<div class='card' ontouchstart='onCardClick(5)'></div>
-		<div class='card' ontouchstart='onCardClick(6)'></div>
-		<div class='card' ontouchstart='onCardClick(7)'></div>
-		<div class='card' ontouchstart='onCardClick(8)'></div>
+	<div class='trail comp'>
+		<div class='card number'>2</div>
+		<div class='card sign'>&plus;</div>
+		<div class='card number'>7</div>
+		<div class='select'>*</div>
+	</div>
+	<div class='hand signs'>
+		<div class='card sign' ontouchstart='onSignCardClick(0)'>&divide</div>
+		<div class='card sign used' ontouchstart='onSignCardClick(1)'>&plus;</div>
+		<div class='card sign' ontouchstart='onSignCardClick(2)'>&minus;</div>
+		<div class='card sign' ontouchstart='onSignCardClick(3)'>?</div>
+	</div>
+	<div class='hand numbers'>
+		<div class='card number' ontouchstart='onNumberCardClick(0)'>2</div>
+		<div class='card number used' ontouchstart='onNumberCardClick(1)'>4</div>
+		<div class='card number' ontouchstart='onNumberCardClick(2)'>8</div>
+		<div class='card number used' ontouchstart='onNumberCardClick(3)'>1</div>
+		<div class='card number' ontouchstart='onNumberCardClick(4)'>9</div>
 	</div>
 	<div class='number-picker hide'>
-		<div class='card number' ontouchstart='onNumberPick(1)'>1</div>
-		<div class='card number' ontouchstart='onNumberPick(2)'>2</div>
-		<div class='card number' ontouchstart='onNumberPick(3)'>3</div>
-		<div class='card number' ontouchstart='onNumberPick(4)'>4</div>
-		<div class='card number' ontouchstart='onNumberPick(5)'>5</div>
-		<div class='card number' ontouchstart='onNumberPick(6)'>6</div>
-		<div class='card number' ontouchstart='onNumberPick(7)'>7</div>
-		<div class='card number' ontouchstart='onNumberPick(8)'>8</div>
-		<div class='card number' ontouchstart='onNumberPick(9)'>9</div>
+		<div class='pick number' ontouchstart='onNumberPick(1)'>1</div>
+		<div class='pick number' ontouchstart='onNumberPick(2)'>2</div>
+		<div class='pick number' ontouchstart='onNumberPick(3)'>3</div>
+		<div class='pick number' ontouchstart='onNumberPick(4)'>4</div>
+		<div class='pick number' ontouchstart='onNumberPick(5)'>5</div>
+		<div class='pick number' ontouchstart='onNumberPick(6)'>6</div>
+		<div class='pick number' ontouchstart='onNumberPick(7)'>7</div>
+		<div class='pick number' ontouchstart='onNumberPick(8)'>8</div>
+		<div class='pick number' ontouchstart='onNumberPick(9)'>9</div>
 	</div>
 	<div class='sign-picker hide'>
-		<div class='card sign' ontouchstart='onSignPick("plus")'>&plus;</div>
-		<div class='card sign' ontouchstart='onSignPick("minus")'>&minus;</div>
-		<div class='card sign' ontouchstart='onSignPick("times")'>&times;</div>
-		<div class='card sign' ontouchstart='onSignPick("divide")'>&divide;</div>
+		<div class='pick sign' ontouchstart='onSignPick("plus")'>&plus;</div>
+		<div class='pick sign' ontouchstart='onSignPick("minus")'>&minus;</div>
+		<div class='pick sign' ontouchstart='onSignPick("times")'>&times;</div>
+		<div class='pick sign' ontouchstart='onSignPick("divide")'>&divide;</div>
 	</div>
 	<div class='end-screen hide'>
 		<div class='end-message'></div>
 		<div ontouchstart='window.location.reload(false)' class='play-again'>Play again</div>
-	</div>
-	<div class='footer'>
-		<div class='undo' ontouchstart='undo()'>Undo</div>
-		<div class='pass' ontouchstart='pass()'>Pass</div>
 	</div>
 	<script src='./index.js'></script>
 </body>
